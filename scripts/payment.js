@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
 
-    // Extract booking details from URL or localStorage
+    // Extract booking details from URL
     const bookingDetails = {
-        type: params.get("type") || "Not Specified",
+        type: params.get("type") || "Travels",
         name: params.get("name") || "Not Specified",
         from: params.get("from") || "Not Specified",
         to: params.get("to") || "Not Specified",
@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded", function () {
         price: params.get("price") || "0",
         meals: params.get("meals") || "No Meal Selected",
         seat: `S-${Math.floor(1 + Math.random() * 40)}`,
-        bookingID: `TRP${Math.floor(10000 + Math.random() * 90000)}` // Generate a unique Booking ID
+        bookingID: `TRP${Math.floor(10000 + Math.random() * 90000)}` // Generate unique Booking ID
     };
 
-    // Store in localStorage for confirmation page
+    // Store in localStorage for use on the confirmation page
     localStorage.setItem("bookingDetails", JSON.stringify(bookingDetails));
 
-    // ✅ Fill in the Booking Details in the Payment Page
+    // ✅ Update the Booking Details on the Page
     document.getElementById("transport-type").textContent = bookingDetails.type;
     document.getElementById("from").textContent = bookingDetails.from;
     document.getElementById("to").textContent = bookingDetails.to;
@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("seatNumber").textContent = bookingDetails.seat;
     document.getElementById("price").textContent = bookingDetails.price;
     document.getElementById("meals").textContent = bookingDetails.meals;
-    document.getElementById("bookingID").textContent = bookingDetails.bookingID;
+    document.getElementById("bookingID").textContent = bookingDetails.bookingID; // Now it won't be "Loading..."
 
-    // ✅ Set Price on "Pay Now" Button
+    // ✅ Update the Pay Button Amount
     const payNowButton = document.getElementById("pay-now");
-    payNowButton.innerHTML = bookingDetails.price;
-    payNowButton.disabled = true; // Disable until payment method is selected
+    payNowButton.innerText = `Pay ${bookingDetails.price}`;
+    payNowButton.disabled = true; // Initially disabled
 
     let selectedPaymentMethod = null;
 
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             selectedPaymentMethod = this.getAttribute("data-method");
 
-            // Remove selected class from all buttons & highlight the clicked one
+            // Remove selected class from all buttons & add to the clicked one
             document.querySelectorAll(".pay-btn").forEach(btn => btn.classList.remove("selected"));
             this.classList.add("selected");
 
@@ -51,14 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    // ✅ Payment Button Click Functionality
+    // ✅ Payment Button Functionality
     payNowButton.addEventListener("click", function () {
         if (!selectedPaymentMethod) return;
 
-        // Show Confirmation Message
+        // Show confirmation message
         document.getElementById("confirmation").classList.remove("hidden");
 
-        // Redirect to Booking Confirmation after 2 Seconds
+        // Redirect to booking confirmation after 2 seconds
         setTimeout(() => {
             window.location.href = "/public/booking-confirmation.html";
         }, 2000);
