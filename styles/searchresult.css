@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,8 +10,6 @@ body {
     background-color: #CBD3F9;
     color: #19255A;
 }
-
-/* Header */
 header {
     background-color: #ffffff;
     color: #19255A;
@@ -47,8 +45,6 @@ nav ul li a {
 nav ul li a:hover {
     color: #081673;
 }
-
-/* Search Results Section */
 .search-results-section {
     background: #E1E5FA;
     padding: 40px;
@@ -124,22 +120,20 @@ nav ul li a:hover {
     color: #081673;
 }
 button {
-    background-color: #87CEFA; /* Light Blue */
+    background-color: #87CEFA; 
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
     border-radius: 5px;
     font-size: 16px;
-    float: right; /* Move button to the right */
+    float: right; 
     margin-top: 10px;
     
 }
 button:hover {
-    background-color: #00BFFF; /* Slightly darker blue */
+    background-color: #00BFFF; 
 }
-
-/* Footer */
 footer {
     background: #19255A;
     color: white;

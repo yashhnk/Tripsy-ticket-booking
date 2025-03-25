@@ -60,8 +60,6 @@ body {
     height: 403px;
     background: #e2e7ee;
 }
-
-/* Left Section */
 .left {
     width: 50%;
     background: #7f92e9;
@@ -71,19 +69,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center text */
+    align-items: center;
     clip-path: ellipse(100% 80% at 0% 50%);
 }
 
 .left h2 {
-    font-size: 15px; /* Reduced font size */
+    font-size: 15px; 
     margin-bottom: 10px;
 }
 
 .left p {
-    font-size: 12px; /* Reduced font size */
+    font-size: 12px; 
     max-width: 80%;
-    text-align: center; /* Center text */
+    text-align: center; 
     line-height: 1.4;
     color: #3c3e78;
 }
@@ -103,8 +101,6 @@ body {
     align-items: center;
     margin-top: 25px;
 }
-
-/* Right Section */
 .right {
     width: 50%;
     background: #e2e7ee;
@@ -150,7 +146,7 @@ input {
     background-color: #CBD5F0;
 }
 input::placeholder {
-    color: #081673; /* Muted blue */
+    color: #081673; 
     opacity: 1;
 }
 .options {

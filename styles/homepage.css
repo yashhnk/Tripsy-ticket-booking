@@ -91,8 +91,6 @@ nav ul li a {
     background: #081673;
     transform: scale(1.05);
 }
-
-/* Popular Destinations Section */
 .popular-destinations {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     padding: 40px 20px;
@@ -170,8 +168,6 @@ nav ul li a {
     font-size: 0.9rem;
     opacity: 0.8;
 }
-
-/* Enhanced Offers Slider Section */
 .offers {
     background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
     padding: 40px 20px;

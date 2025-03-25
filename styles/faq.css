@@ -9,8 +9,6 @@ body {
     background-color: #CBD5F0;
     color: #081673;
 }
-
-/* Header */
 header {
     background-color: #ffffff;
     color: #19255A;
@@ -40,8 +38,6 @@ nav ul li a {
     font-size: 16px;
     font-weight: bold;
 }
-
-/* FAQ Section */
 .faq-section {
     padding: 40px;
     text-align: left;
@@ -73,8 +69,6 @@ nav ul li a {
     color: #414141;
     margin-top: 5px;
 }
-
-/* About Us Section */
 .about-title {
     font-size: 28px;
     margin-top: 30px;
@@ -95,8 +89,6 @@ nav ul li a {
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-/* Contact Section */
 .contact-section {
     padding: 40px;
     background-color: #CBD5F0;
@@ -176,8 +168,6 @@ button {
 button:hover {
     background: #19255A;
 }
-
-/* Footer */
 footer {
     background: #19255A;
     color: white;

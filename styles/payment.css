@@ -81,7 +81,7 @@ h3 {
     cursor: pointer;
     border-radius: 5px;
     font-weight: 600;
-    width: 120px; /* Ensures all buttons are same width */
+    width: 120px;
     transition: background 0.3s ease;
 }
 
@@ -90,7 +90,7 @@ h3 {
 }
 
 .pay-btn.selected {
-    background: #28a745 !important; /* Green when selected */
+    background: #28a745 !important; 
     color: white !important;
 }
 

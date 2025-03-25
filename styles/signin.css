@@ -131,7 +131,7 @@ input {
     margin-left: 30px;
 }
 input::placeholder {
-    color: #081673; /* Muted blue */
+    color: #081673; 
     opacity: 1;
 }
 
