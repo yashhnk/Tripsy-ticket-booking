@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const params = new URLSearchParams(window.location.search);
     const bookingDetails = {
-        type: params.get("type") || "Travels",
+        type: params.get("type") || "Travel",
         name: params.get("name") || "Not Specified",
         from: params.get("from") || "Not Specified",
         to: params.get("to") || "Not Specified",
