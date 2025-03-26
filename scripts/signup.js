@@ -13,9 +13,9 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     localStorage.setItem("savedPassword", password);
 
     alert("Sign-Up Successful!");
-    window.location.href = "signin.html";
+    window.location.href = "/public/signin.html";
 });
 
 function redirectToLogin() {
-    window.location.href = "signin.html";
+    window.location.href = "/public/signin.html";
 }

@@ -113,4 +113,7 @@ h3 {
 .hidden {
     display: none;
 }
+#confirmation p {
+    margin-top: 30px;
+}
 
