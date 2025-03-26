@@ -18,5 +18,5 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
 });
 
 function redirectToSignup() {
-    window.location.href = "signup.html"; 
+    window.location.href = "index.html"; 
 }
