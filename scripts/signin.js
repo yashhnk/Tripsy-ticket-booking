@@ -8,12 +8,12 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     if (savedEmail === emailInput.value && savedPass === passInput.value) {
         alert("Login Successful!");
         localStorage.setItem("isLoggedIn", "true");
-        window.location.href = "homepage.html"; 
+        window.location.href = "/public/homepage.html"; 
     } else {
         alert("Please enter valid credentials.");
     }
     if (localStorage.getItem("isLoggedIn") === "true") {
-        window.location.href = "homepage.html"
+        window.location.href = "/public/homepage.html"
     }
 });
 
